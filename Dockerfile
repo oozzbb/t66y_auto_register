@@ -13,4 +13,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # 运行应用
 # 替换 app.py 为你的主 Python 文件名
-CMD ["run.sh", "--start"]
+CMD ["nohup","python3", "t66y_auto_register.py"]
