@@ -11,6 +11,4 @@ COPY . /app
 # 如果你有 requirements.txt 文件，取消下面这行的注释
 RUN pip install --no-cache-dir -r requirements.txt
 
-RUN chmod +x /app/entrypoint.sh
-
-ENTRYPOINT ["/app/entrypoint.sh"]
+CMD ["python","t66y_auto_register.py"]
