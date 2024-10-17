@@ -11,6 +11,6 @@ COPY . /app
 # 如果你有 requirements.txt 文件，取消下面这行的注释
 RUN pip install --no-cache-dir -r requirements.txt
 
-# 运行应用
-# 替换 app.py 为你的主 Python 文件名
-CMD ["nohup","python3", "t66y_auto_register.py"]
+RUN chmod +x /app/entrypoint.sh
+
+ENTRYPOINT ["/app/entrypoint.sh"]
